@@ -1,0 +1,11 @@
+$h2_color:rgb(7, 158, 172);
+%title {
+    size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.name {
+    @extend %title;
+    color: $h2_color;
+    font-weight: bold;
+}

@@ -1,0 +1,26 @@
+@use 'avatar';
+@use 'title';
+@use 'text';
+$bck-color:rgb(246, 246, 237);
+$border: 1px rgb(197, 194, 194) solid;
+.contain {
+    background-color: $bck-color;
+    border: $border;
+    width: 100%;
+    padding: 20px;
+}
+
+.head {
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,13 @@
+@mixin text($size, $color) {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: $size;
+    color: $color;
+}
+
+.description {
+    @include text(22px, rgb(77, 39, 39))
+}
+
+.text {
+    @include text(18px, rgb(26, 14, 14))
+}

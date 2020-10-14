@@ -1,0 +1,27 @@
+$large-color :rgb(23, 34, 66);
+$small-color :rgb(21, 206, 46);
+$raduis: 10%;
+%border {
+    font-size: 2px;
+    border-style: dotted;
+}
+
+@mixin avatar($size) {
+    @if $size==50px {
+        border-color: $large-color;
+        width: $size;
+        height: $size;
+        @extend %border;
+    }
+    @else {
+        border-color: $small-color;
+        width: $size;
+        height: $size;
+        @extend %border;
+    }
+}
+
+.avatar {
+    @include avatar(150px);
+    border-radius: $raduis;
+}
